@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>DINZXX • AutoJualOre Key Manager</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    color:#fff;
+    background:
+        radial-gradient(
+            circle at top,
+            #451b00 0%,
+            #170a03 35%,
+            #050505 80%
+        );
+}
+
+.container{
+    width:100%;
+    max-width:1050px;
+    margin:auto;
+    padding:20px;
+}
+
+/* HEADER */
+
+.header{
+    padding:25px;
+    margin-bottom:20px;
+
+    background:#100a06;
+
+    border:1px solid #743000;
+    border-radius:17px;
+
+    box-shadow:
+        0 0 35px rgba(255,100,0,.12);
+}
+
+.logo{
+    color:#ff7600;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.subtitle{
+    color:#a08370;
+    margin-top:7px;
+}
+
+/* CARD */
+
+.card{
+    padding:22px;
+    margin-bottom:20px;
+
+    background:#100a06;
+
+    border:1px solid #66300f;
+    border-radius:16px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.35);
+}
+
+h2{
+    margin-top:0;
+    color:#ff7900;
+}
+
+/* FORM */
+
+label{
+    display:block;
+    color:#bda18e;
+    margin:14px 0 7px;
+}
+
+input,
+select{
+    width:100%;
+    padding:14px;
+
+    background:#080604;
+    color:#fff;
+
+    border:1px solid #61300f;
+    border-radius:9px;
+
+    outline:none;
+}
+
+input:focus,
+select:focus{
+    border-color:#ff7200;
+
+    box-shadow:
+        0 0 10px rgba(255,110,0,.15);
+}
+
+button{
+    padding:12px 15px;
+
+    color:#fff;
+    font-weight:bold;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff8a00,
+            #e84c00
+        );
+
+    border:0;
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+button:hover{
+    transform:translateY(-1px);
+
+    box-shadow:
+        0 0 18px rgba(255,100,0,.3);
+}
+
+.create{
+    width:100%;
+    margin-top:18px;
+}
+
+/* RESULT */
+
+.result{
+    display:none;
+
+    margin-top:20px;
+    padding:18px;
+
+    background:#211006;
+
+    border:1px solid #a84c00;
+    border-radius:11px;
+}
+
+.key{
+    display:block;
+
+    margin:9px 0;
+
+    color:#ff8a00;
+
+    font-size:19px;
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    word-break:break-all;
+}
+
+/* TABLE */
+
+.table-wrap{
+    width:100%;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    min-width:760px;
+
+    border-collapse:collapse;
+}
+
+th{
+    padding:13px 10px;
+
+    text-align:left;
+
+    color:#ff8500;
+
+    border-bottom:1px solid #713000;
+}
+
+td{
+    padding:13px 10px;
+
+    color:#ddd;
+
+    border-bottom:1px solid #2d190d;
+}
+
+.key-table{
+    color:#ff8a00;
+
+    font-weight:bold;
+}
+
+/* BADGE */
+
+.badge{
+    display:inline-block;
+
+    padding:6px 9px;
+
+    border-radius:6px;
+
+    font-size:11px;
+    font-weight:bold;
+}
+
+.active{
+    background:#123d20;
+    color:#55eb88;
+}
+
+.expired{
+    background:#421616;
+    color:#ff6969;
+}
+
+.revoked{
+    background:#38151c;
+    color:#ff6072;
+}
+
+/* ACTION */
+
+.copy{
+    background:#66360f;
+
+    padding:7px 10px;
+
+    font-size:11px;
+}
+
+.delete{
+    background:#c52f2f;
+
+    padding:7px 10px;
+
+    margin-left:4px;
+
+    font-size:11px;
+}
+
+/* INFO */
+
+.info{
+    color:#a8907f;
+
+    font-size:13px;
+
+    line-height:1.8;
+}
+
+.empty{
+    text-align:center;
+
+    padding:30px;
+
+    color:#755e50;
+}
+
+.footer{
+    text-align:center;
+
+    padding:10px;
+
+    color:#624d3d;
+
+    font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .container{
+        padding:12px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <div class="logo">
+        DINZXX • AUTO JUAL ORE
+    </div>
+
+    <div class="subtitle">
+        MonetLoader Key Management
+    </div>
+
+</div>
+
+
+<!-- CREATE -->
+
+<div class="card">
+
+<h2>CREATE KEY + LUA</h2>
+
+
+<label>Durasi Key</label>
+
+<select id="duration">
+
+    <option value="1h">
+        1 Jam
+    </option>
+
+    <option value="3h">
+        3 Jam
+    </option>
+
+    <option value="6h">
+        6 Jam
+    </option>
+
+    <option value="12h">
+        12 Jam
+    </option>
+
+    <option value="1d">
+        1 Hari
+    </option>
+
+    <option value="3d">
+        3 Hari
+    </option>
+
+    <option value="7d">
+        7 Hari
+    </option>
+
+    <option value="30d">
+        30 Hari
+    </option>
+
+    <option value="permanent">
+        Permanen
+    </option>
+
+</select>
+
+
+<label>
+    Nama File Lua
+</label>
+
+<input
+    id="filename"
+    value="AutoJualOre"
+    placeholder="Nama file Lua"
+>
+
+
+<button
+    class="create"
+    onclick="generate()"
+>
+    CREATE KEY + CREATE LUA
+</button>
+
+
+<!-- RESULT -->
+
+<div
+    id="result"
+    class="result"
+>
+
+    <div class="info">
+        KEY BERHASIL DIBUAT
+    </div>
+
+
+    <span
+        id="keyOutput"
+        class="key"
+    ></span>
+
+
+    <div
+        id="durationOutput"
+        class="info"
+    ></div>
+
+
+    <br>
+
+
+    <button onclick="downloadLua()">
+        DOWNLOAD MONETLOADER .LUA
+    </button>
+
+</div>
+
+</div>
+
+
+<!-- LIST KEY -->
+
+<div class="card">
+
+<h2>
+    LIST KEY
+</h2>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+    <th>
+        KEY
+    </th>
+
+    <th>
+        DURASI
+    </th>
+
+    <th>
+        DIBUAT
+    </th>
+
+    <th>
+        STATUS
+    </th>
+
+    <th>
+        ACTION
+    </th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="keyList">
+
+</tbody>
+
+
+</table>
+
+</div>
+
+</div>
+
+
+<!-- INFO -->
+
+<div class="card">
+
+<h2>
+    AUTO JUAL ORE
+</h2>
+
+<div class="info">
+
+    Command:
+    <b>/ajualore</b>
+
+    <br>
+
+    ON:
+    langsung menjalankan
+    <b>/jualore</b>
+
+    <br>
+
+    Interval:
+    <b>52 detik</b>
+
+    <br>
+
+    OFF:
+    gunakan
+    <b>/ajualore</b>
+    kembali
+
+    <br>
+
+    Author:
+    <b>DINZXX</b>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+    DINZXX • AutoJualOre Key Manager
+
+</div>
+
+
+</div>
+
+
+<script>
+
+
+/* =====================================
+   DATA
+===================================== */
+
+
+let keys =
+JSON.parse(
+    localStorage.getItem(
+        "DINZXX_AUTOJUALORE_KEYS"
+    ) || "[]"
+);
+
+
+let generatedLua = "";
+
+let generatedKey = "";
+
+let currentFilename =
+    "AutoJualOre";
+
+
+/* =====================================
+   RANDOM
+===================================== */
+
+
+function randomString(length){
+
+    const chars =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    let result = "";
+
+    for(
+        let i = 0;
+        i < length;
+        i++
+    ){
+
+        result +=
+            chars.charAt(
+                Math.floor(
+                    Math.random()
+                    * chars.length
+                )
+            );
+
+    }
+
+    return result;
+
+}
+
+
+/* =====================================
+   CREATE KEY
+===================================== */
+
+
+function createKey(){
+
+    /*
+       Contoh:
+
+       ORE-F8KB7V-DINZXX
+    */
+
+    return (
+        "ORE-" +
+        randomString(6) +
+        "-DINZXX"
+    );
+
+}
+
+
+/* =====================================
+   DURASI
+===================================== */
+
+
+function getDuration(){
+
+    const value =
+        document.getElementById(
+            "duration"
+        ).value;
+
+
+    const data = {
+
+        "1h":
+            60 * 60,
+
+        "3h":
+            3 * 60 * 60,
+
+        "6h":
+            6 * 60 * 60,
+
+        "12h":
+            12 * 60 * 60,
+
+        "1d":
+            24 * 60 * 60,
+
+        "3d":
+            3 * 24 * 60 * 60,
+
+        "7d":
+            7 * 24 * 60 * 60,
+
+        "30d":
+            30 * 24 * 60 * 60,
+
+        "permanent":
+            0
+
+    };
+
+
+    return data[value];
+
+}
+
+
+/* =====================================
+   DURASI TEXT
+===================================== */
+
+
+function getDurationText(){
+
+    const value =
+        document.getElementById(
+            "duration"
+        ).value;
+
+
+    const data = {
+
+        "1h":
+            "1 Jam",
+
+        "3h":
+            "3 Jam",
+
+        "6h":
+            "6 Jam",
+
+        "12h":
+            "12 Jam",
+
+        "1d":
+            "1 Hari",
+
+        "3d":
+            "3 Hari",
+
+        "7d":
+            "7 Hari",
+
+        "30d":
+            "30 Hari",
+
+        "permanent":
+            "Permanen"
+
+    };
+
+
+    return data[value];
+
+}
+
+
+/* =====================================
+   ENCODE
+===================================== */
+
+
+function encode(text){
+
+    return btoa(
+        unescape(
+            encodeURIComponent(
+                text
+            )
+        )
+    );
+
+}
+
+
+/* =====================================
+   GENERATE
+===================================== */
+
+
+function generate(){
+
+    generatedKey =
+        createKey();
+
+
+    const duration =
+        getDuration();
+
+
+    const durationText =
+        getDurationText();
+
+
+    const created =
+        Date.now();
+
+
+    currentFilename =
+        document.getElementById(
+            "filename"
+        )
+        .value
+        .replace(
+            /[^a-zA-Z0-9_-]/g,
+            ""
+        );
+
+
+    if(!currentFilename){
+
+        currentFilename =
+            "AutoJualOre";
+
+    }
+
+
+    /*
+       SIMPAN KEY
+    */
+
+
+    keys.push({
+
+        key:
+            generatedKey,
+
+        duration:
+            duration,
+
+        durationText:
+            durationText,
+
+        created:
+            created,
+
+        revoked:
+            false
+
+    });
+
+
+    saveKeys();
+
+
+    /*
+       SOURCE MONETLOADER
+    */
+
+
+    const source = `
+
+local KEY = "${generatedKey}"
+
+local CREATED = ${created}
+
+local DURATION = ${duration}
+
+local aktif = false
+
+require "lib.moonloader"
+
+
+function main()
+
+    while not isSampAvailable() do
+
+        wait(100)
+
+    end
+
+
+    sampRegisterChatCommand(
+        "ajualore",
+        function()
+
+            /*
+               CEK EXPIRY
+            */
+
+            if DURATION > 0 then
+
+                local now =
+                    os.time()
+
+                local createdSec =
+                    math.floor(
+                        CREATED / 1000
+                    )
+
+
+                if now >=
+                   createdSec + DURATION then
+
+                    sampAddChatMessage(
+                        "{FF4444}[DINZXX] {FFFFFF}KEY EXPIRED.",
+                        -1
+                    )
+
+                    return
+
+                end
+
+            end
+
+
+            /*
+               TOGGLE
+            */
+
+            aktif =
+                not aktif
+
+
+            if aktif then
+
+                sampAddChatMessage(
+                    "{FF7700}[DINZXX] {FFFFFF}AutoJualOre AKTIF.",
+                    -1
+                )
+
+
+                /*
+                   LANGSUNG JUAL
+                */
+
+                sampSendChat(
+                    "/jualore"
+                )
+
+
+            else
+
+                sampAddChatMessage(
+                    "{FF4444}[DINZXX] {FFFFFF}AutoJualOre NONAKTIF.",
+                    -1
+                )
+
+            end
+
+        end
+    )
+
+
+    /*
+       LOOP 52 DETIK
+    */
+
+    while true do
+
+        wait(100)
+
+
+        if aktif then
+
+            wait(52000)
+
+
+            if aktif then
+
+                sampSendChat(
+                    "/jualore"
+                )
+
+            end
+
+        end
+
+    end
+
+end
+
+`;
+
+
+    /*
+       ENCODE SOURCE
+    */
+
+
+    const encoded =
+        encode(source);
+
+
+    /*
+       LUA LOADER
+    */
+
+
+    generatedLua = `
+
+script_name("AutoJualOre")
+
+script_author("DINZXX")
+
+
+local DATA =
+"${encoded}"
+
+
+local function decode(data)
+
+    local b =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+
+
+    data =
+        data:gsub(
+            '[^'..b..'=]',
+            ''
+        )
+
+
+    return (
+
+        data:gsub(
+            '.',
+            function(x)
+
+                if x == '=' then
+
+                    return ''
+
+                end
+
+
+                local r,f =
+                    '',
+                    (b:find(x)-1)
+
+
+                for i = 6,1,-1 do
+
+                    r = r ..
+
+                    (
+                        f % 2^i -
+                        f % 2^(i-1) > 0
+
+                        and '1'
+
+                        or '0'
+                    )
+
+                end
+
+
+                return r
+
+            end
+        )
+
+        :gsub(
+            '%d%d%d?%d?%d?%d?%d?%d?',
+            function(x)
+
+                if #x ~= 8 then
+
+                    return ''
+
+                end
+
+
+                local c = 0
+
+
+                for i = 1,8 do
+
+                    c = c +
+
+                    (
+                        x:sub(i,i) == '1'
+
+                        and 2^(8-i)
+
+                        or 0
+                    )
+
+                end
+
+
+                return string.char(c)
+
+            end
+        )
+
+    )
+
+end
+
+
+local source =
+    decode(DATA)
+
+
+local fn =
+    loadstring(source)
+
+
+if fn then
+
+    fn()
+
+end
+
+`;
+
+
+    /*
+       HASIL
+    */
+
+
+    document.getElementById(
+        "keyOutput"
+    ).textContent =
+        generatedKey;
+
+
+    document.getElementById(
+        "durationOutput"
+    ).textContent =
+        "Durasi: " +
+        durationText;
+
+
+    document.getElementById(
+        "result"
+    ).style.display =
+        "block";
+
+
+    renderKeys();
+
+}
+
+
+/* =====================================
+   DOWNLOAD LUA
+===================================== */
+
+
+function downloadLua(){
+
+    if(!generatedLua){
+
+        alert(
+            "Generate key terlebih dahulu."
+        );
+
+        return;
+
+    }
+
+
+    const blob =
+        new Blob(
+            [
+                generatedLua
+            ],
+            {
+                type:
+                    "text/plain"
+            }
+        );
+
+
+    const url =
+        URL.createObjectURL(
+            blob
+        );
+
+
+    const a =
+        document.createElement(
+            "a"
+        );
+
+
+    a.href =
+        url;
+
+
+    a.download =
+        currentFilename +
+        ".lua";
+
+
+    document.body.appendChild(
+        a
+    );
+
+
+    a.click();
+
+
+    a.remove();
+
+
+    URL.revokeObjectURL(
+        url
+    );
+
+}
+
+
+/* =====================================
+   COPY KEY
+===================================== */
+
+
+function copyKey(key){
+
+    navigator.clipboard
+        .writeText(key)
+        .then(function(){
+
+            alert(
+                "Key berhasil disalin."
+            );
+
+        });
+
+}
+
+
+/* =====================================
+   REVOKE KEY
+===================================== */
+
+
+function deleteKey(index){
+
+    const item =
+        keys[index];
+
+
+    if(!item){
+
+        return;
+
+    }
+
+
+    const confirmDelete =
+        confirm(
+            "REVOKE KEY ini?\n\n" +
+            item.key +
+            "\n\n" +
+            "Key akan menjadi REVOKED."
+        );
+
+
+    if(!confirmDelete){
+
+        return;
+
+    }
+
+
+    /*
+       Jangan hapus record.
+       Tandai sebagai REVOKED.
+    */
+
+
+    keys[index].revoked =
+        true;
+
+
+    saveKeys();
+
+
+    renderKeys();
+
+}
+
+
+/* =====================================
+   STATUS
+===================================== */
+
+
+function getStatus(item){
+
+    /*
+       REVOKED
+    */
+
+    if(item.revoked){
+
+        return {
+
+            text:
+                "REVOKED",
+
+            cls:
+                "revoked"
+
+        };
+
+    }
+
+
+    /*
+       PERMANEN
+    */
+
+    if(
+        item.duration === 0
+    ){
+
+        return {
+
+            text:
+                "AKTIF",
+
+            cls:
+                "active"
+
+        };
+
+    }
+
+
+    /*
+       EXPIRED
+    */
+
+    const expired =
+        Date.now() >=
+        (
+            item.created +
+            item.duration * 1000
+        );
+
+
+    if(expired){
+
+        return {
+
+            text:
+                "EXPIRED",
+
+            cls:
+                "expired"
+
+        };
+
+    }
+
+
+    return {
+
+        text:
+            "AKTIF",
+
+        cls:
+            "active"
+
+    };
+
+}
+
+
+/* =====================================
+   DATE
+===================================== */
+
+
+function formatDate(timestamp){
+
+    return new Date(
+        timestamp
+    ).toLocaleString(
+        "id-ID"
+    );
+
+}
+
+
+/* =====================================
+   RENDER LIST
+===================================== */
+
+
+function renderKeys(){
+
+    const list =
+        document.getElementById(
+            "keyList"
+        );
+
+
+    if(keys.length === 0){
+
+        list.innerHTML = `
+
+        <tr>
+
+            <td colspan="5">
+
+                <div class="empty">
+
+                    Belum ada key.
+
+                </div>
+
+            </td>
+
+        </tr>
+
+        `;
+
+        return;
+
+    }
+
+
+    let html = "";
+
+
+    [
+        ...keys
+    ]
+    .reverse()
+    .forEach(
+        function(item){
+
+            const index =
+                keys.indexOf(
+                    item
+                );
+
+
+            const status =
+                getStatus(
+                    item
+                );
+
+
+            html += `
+
+            <tr>
+
+                <td class="key-table">
+
+                    ${item.key}
+
+                </td>
+
+
+                <td>
+
+                    ${item.durationText}
+
+                </td>
+
+
+                <td>
+
+                    ${formatDate(
+                        item.created
+                    )}
+
+                </td>
+
+
+                <td>
+
+                    <span
+                        class="badge
+                        ${status.cls}"
+                    >
+
+                        ${status.text}
+
+                    </span>
+
+                </td>
+
+
+                <td>
+
+                    <button
+                        class="copy"
+                        onclick="
+                            copyKey(
+                                '${item.key}'
+                            )
+                        "
+                    >
+
+                        COPY
+
+                    </button>
+
+
+                    <button
+                        class="delete"
+                        onclick="
+                            deleteKey(
+                                ${index}
+                            )
+                        "
+                    >
+
+                        REVOKE
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+            `;
+
+        }
+    );
+
+
+    list.innerHTML =
+        html;
+
+}
+
+
+/* =====================================
+   SAVE
+===================================== */
+
+
+function saveKeys(){
+
+    localStorage.setItem(
+
+        "DINZXX_AUTOJUALORE_KEYS",
+
+        JSON.stringify(
+            keys
+        )
+
+    );
+
+}
+
+
+/* =====================================
+   AUTO REFRESH STATUS
+===================================== */
+
+
+setInterval(
+    renderKeys,
+    1000
+);
+
+
+/* =====================================
+   START
+===================================== */
+
+
+renderKeys();
+
+</script>
+
+</body>
+</html>
